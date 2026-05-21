@@ -11,8 +11,9 @@
     ],
     "skipLibCheck": true,
     "types": [
-      "node"
+      "vite/client"
     ],
+    "baseUrl": ".",
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "moduleDetection": "force",
@@ -25,5 +26,14 @@
     },
     "allowImportingTsExtensions": true,
     "noEmit": true
-  }
+  },
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx",
+    "./env.d.ts",
+    "./shims.d.ts"
+  ],
+  "exclude": [
+    "./vite.config.ts"
+  ]
 }
